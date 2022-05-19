@@ -54,4 +54,5 @@ execute at @e[tag=dl3] run setblock ~ ~ ~ light[level=3]
 execute at @e[tag=dl2] run setblock ~ ~ ~ light[level=2]
 execute at @e[tag=dl1] run setblock ~ ~ ~ light[level=1]
 
+function dynamic_lights:updatelightemitters
 schedule function dynamic_lights:5t 5t
