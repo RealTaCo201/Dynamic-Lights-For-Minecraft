@@ -1,17 +1,17 @@
-execute at @e[tag=dl15] run setblock ~ ~ ~ air
-execute at @e[tag=dl14] run setblock ~ ~ ~ air
-execute at @e[tag=dl10] run setblock ~ ~ ~ air
-execute at @e[tag=dl9] run setblock ~ ~ ~ air
+execute at @e[tag=dl15] run fill ~ ~ ~ ~ ~ ~ air replace light
+execute at @e[tag=dl14] run fill ~ ~ ~ ~ ~ ~ air replace light
+execute at @e[tag=dl10] run fill ~ ~ ~ ~ ~ ~ air replace light
+execute at @e[tag=dl9] run fill ~ ~ ~ ~ ~ ~ air replace light
+
+execute at @e[tag=dl15w] run fill ~ ~ ~ ~ ~ ~ water replace light
+execute at @e[tag=dl14w] run fill ~ ~ ~ ~ ~ ~ water replace light
+execute at @e[tag=dl10w] run fill ~ ~ ~ ~ ~ ~ water replace light
+execute at @e[tag=dl9w] run fill ~ ~ ~ ~ ~ ~ water replace light
 
 execute as @e[tag=dl15] run kill @s
 execute as @e[tag=dl14] run kill @s
 execute as @e[tag=dl10] run kill @s
 execute as @e[tag=dl9] run kill @s
-
-execute at @e[tag=dl15w] run setblock ~ ~ ~ water
-execute at @e[tag=dl14w] run setblock ~ ~ ~ water
-execute at @e[tag=dl10w] run setblock ~ ~ ~ water
-execute at @e[tag=dl9w] run setblock ~ ~ ~ water
 
 execute as @e[tag=dl15w] run kill @s
 execute as @e[tag=dl14w] run kill @s
