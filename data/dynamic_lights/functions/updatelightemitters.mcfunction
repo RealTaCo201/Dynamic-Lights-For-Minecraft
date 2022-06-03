@@ -1,5 +1,7 @@
 execute as @a run tag @s remove 15ll
 execute as @a run tag @s remove 10ll
+execute as @e[tag=flame] run tag @s remove 15ll
+execute as @e[tag=flame] run tag @s remove flame
 
 execute as @a[nbt={"SelectedItem":{"id":"minecraft:torch"}}] run tag @s add 15ll
 execute as @a[nbt={"Inventory":[{Slot:-106b,id:"minecraft:torch"}]}] run tag @s add 15ll
@@ -74,3 +76,6 @@ execute as @e[type=item,nbt={"Item":{"id":"minecraft:nether_star"}}] if entity @
 execute as @e[type=glow_squid] if entity @s[nbt=!{"Tags":["10ll"]}] run tag @s add 10ll
 execute as @e[type=magma_cube] if entity @s[nbt=!{"Tags":["10ll"]}] run tag @s add 10ll
 execute as @e[type=blaze] if entity @s[nbt=!{"Tags":["15ll"]}] run tag @s add 15ll
+execute as @e[nbt=!{Fire:-1s}] if entity @s[nbt=!{"Tags":["flame"]}] run tag @s add flame
+execute as @a[nbt={Fire:-20s}] if entity @s[nbt={"Tags":["flame"]}] run tag @s remove flame
+execute as @e[nbt={"Tags":["flame"]}] run tag @s add 15ll
